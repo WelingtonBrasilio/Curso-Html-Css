@@ -1,18 +1,57 @@
-
-
+/*Cor e margin interna do cabeçalho*/
 header{
     background-color: #BBBBBB;
+    padding: 20px 0;
 }
-
+/*Cria a box centralizada, forçando o alinhamento do menu e logo da pag*/
+.caixa{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+/*Move o menu de forma livre para escolha de posicionamento*/
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+/*Posiciona a lista de menu inline e da espaçamento entre cada opção*/
 nav li{
     display: inline;
     margin: 0 0 0 15px;
 }
-
+/*Letras em Maiúsculas, em negrito, tamanho de fonte, retira sublinhado padrão*/
 nav a{
     text-transform: uppercase;
     color: #000000;
     font-weight: bold;
     font-size: 22px;
     text-decoration: none;
+}
+/*Cria a box centralizada, para seguir o padrão do cabeçalho*/
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+/*Posiciona a lista de produtos lado a lado*/
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+}
+
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao{
+    font-size: 18px;
+}
+
+.produto-preço{
+    font-size: 22px;
+    font-weight: bold;
 }
