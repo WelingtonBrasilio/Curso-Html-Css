@@ -28,6 +28,11 @@ nav a{
     font-size: 22px;
     text-decoration: none;
 }
+/*Adiciona animação no menu de cabeçalho quando se tem o mouse sobre os link's*/
+nav a:hover{
+    color: #C78C19;
+    text-decoration: underline;
+}
 /*Cria a box centralizada, para seguir o padrão do cabeçalho*/
 .produtos{
     width: 940px;
@@ -46,6 +51,18 @@ nav a{
     border: 2px solid #000000;
     border-radius: 10px;
 }
+/*Altera a cor da box dos itens quando o mouse está por cima*/
+.produtos li:hover{
+    border-color: #C78C19;
+}
+/*Altera a cor da box dos itens quando o botão do mouse está pressionado*/
+.produtos li:active{
+    border-color: #088C19;
+}
+/*Altera o tamanho do titulo do item quando o mouse está por cima da box*/
+.produtos li:hover h2{
+    font-size: 35px;
+}
 
 .produtos h2{
     font-size: 30px;
@@ -60,4 +77,10 @@ nav a{
     font-size: 22px;
     font-weight: bold;
     margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    padding: 40px;
+    background-image: url("/imagens/produtos/bg.jpg")
 }
