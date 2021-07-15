@@ -78,9 +78,15 @@ nav a:hover{
     font-weight: bold;
     margin-top: 10px;
 }
-
+/*Background,alinhamento e espaçamento*/
 footer{
     text-align: center;
     padding: 40px;
     background-image: url("/imagens/produtos/bg.jpg")
+}
+
+.copyright{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-top: 20px;
 }

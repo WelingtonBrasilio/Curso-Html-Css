@@ -1,6 +1,41 @@
-
-.titulo-principal{
-    padding-left: 20px;
+*{
+    margin: 0;
+}
+/*Cor e margin interna do cabeçalho*/
+header{
+    background-color: #BBBBBB;
+    padding: 20px 0;
+    border: none;
+}
+/*Cria a box centralizada, forçando o alinhamento do menu e logo da pag*/
+.caixa{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+/*Move o menu de forma livre para escolha de posicionamento*/
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+/*Posiciona a lista de menu inline e da espaçamento entre cada opção*/
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+/*Letras em Maiúsculas, em negrito, tamanho de fonte, retira sublinhado padrão*/
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+/*Adiciona animação no menu de cabeçalho quando se tem o mouse sobre os link's*/
+nav a:hover{
+    color: #C78C19;
+    text-decoration: underline;
 }
 
 #barbearia{
@@ -9,15 +44,17 @@
 /*Edita a div principal para uma mudança de cor e cria uma margem interna para melhor apresentação*/
 .principal{
     background-color: #CCCCCC;
-    padding: 30px;
+    padding: 40px;
 }
 
 .titulo{
     text-align: center;
+    padding: 10px;
 }
 
 p{
     text-align: center;
+    padding: 5px;
 }
 
 #missao{
@@ -33,7 +70,7 @@ em strong{
     padding: 20px;
 }
 /*Posiciona a lista a esquerda e permite o alinhamento da imagem pelo topo + que a imagem se enquadre em sua lateral*/
-ul{
+.menu-itens{
     display: inline-block;
     vertical-align: top;
     width: 20%;
