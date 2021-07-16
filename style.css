@@ -1,11 +1,7 @@
-*{
-    margin: 0;
-}
 /*Cor e margin interna do cabeçalho*/
 header{
     background-color: #BBBBBB;
     padding: 20px 0;
-    border: none;
 }
 /*Cria a box centralizada, forçando o alinhamento do menu e logo da pag*/
 .caixa{
@@ -13,6 +9,37 @@ header{
     width: 940px;
     margin: 0 auto;
 }
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+/*-----------------------------------------------------------------*/
+/*Configuração Formulário*/
+form{
+    margin: 40px 0;
+}
+/*Padroniza as labels e o paragrafo para uma melhor apresentação*/
+form label, form p{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+/*Cada item do formulário ocupa uma linha de espaço, tendo seu espaçamento e comprimento definidos*/
+.input-padrao{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+/*-----------------------------------------------------------------*/
+/*Configuração produtos*/
 /*Move o menu de forma livre para escolha de posicionamento*/
 nav{
     position: absolute;
@@ -37,50 +64,63 @@ nav a:hover{
     color: #C78C19;
     text-decoration: underline;
 }
-
-#barbearia{
-    width: 100%;
+/*Cria a box centralizada, para seguir o padrão do cabeçalho*/
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
 }
-/*Edita a div principal para uma mudança de cor e cria uma margem interna para melhor apresentação*/
-.principal{
-    background-color: #CCCCCC;
-    padding: 40px;
-}
-
-.titulo{
-    text-align: center;
-    padding: 10px;
-}
-
-p{
-    text-align: center;
-    padding: 5px;
-}
-
-#missao{
-    font-size: 20px;
-}
-
-em strong{
-    color: #ff0000;
-}
-
-.beneficios{
-    background-color: #ffffff;
-    padding: 20px;
-}
-/*Posiciona a lista a esquerda e permite o alinhamento da imagem pelo topo + que a imagem se enquadre em sua lateral*/
-.menu-itens{
+/*Posiciona a lista de produtos lado a lado; define o espaçamento interno dentro da resolução pré-definida*/
+.produtos li{
     display: inline-block;
+    text-align: center;
+    width: 30%;
     vertical-align: top;
-    width: 20%;
-    margin-right: 15%;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+/*Altera a cor da box dos itens quando o mouse está por cima*/
+.produtos li:hover{
+    border-color: #C78C19;
+}
+/*Altera a cor da box dos itens quando o botão do mouse está pressionado*/
+.produtos li:active{
+    border-color: #088C19;
+}
+/*Altera o tamanho do titulo do item quando o mouse está por cima da box*/
+.produtos li:hover h2{
+    font-size: 35px;
 }
 
-.itens{
-    font-style: italic;
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
 }
-/*Reduz a imagem para adaptar-se a configuração da lista*/
-#imagembeneficios{
-    width: 50%;
+
+.produto-descricao{
+    font-size: 18px;
+}
+
+.produto-preço{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/*-----------------------------------------------------------------*/
+/*Configuração footer*/
+/*Background,alinhamento e espaçamento*/
+footer{
+    text-align: center;
+    padding: 40px;
+    background-image: url("/imagens/produtos/bg.jpg")
+}
+
+.copyright{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-top: 20px;
 }
