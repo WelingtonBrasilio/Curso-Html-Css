@@ -98,9 +98,16 @@ header{
 .itens:first-child{
     font-weight: bold;
 }
-
+/*Sombramento e opacidade da imagem beneficios, com transição*/
 .imagem-beneficios{
     width: 60%;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 20px #000000;
+}
+
+.imagem-beneficios:hover{
+    opacity: 0.3;
 }
 
 .video{
@@ -259,4 +266,75 @@ footer{
     color: #FFFFFF;
     font-size: 13px;
     margin-top: 20px;
+}
+/*Adaptação componentes para mobile*/
+@media screen and (max-width: 480px){
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .produtos, form, input.enviar{
+        width: auto;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+
+    nav li{
+        margin: 0 0 0 10px;
+    }
+
+    .principal{
+        line-height: 1.5;
+    }
+
+    .titulo-principal{
+        line-height: 1;
+    }
+    .utensilios{
+
+        margin: 0 10px 10px 0;
+    }
+
+    .produtos-imagem{
+        margin: auto;
+    }
+
+    .lista-beneficios, .imagem-beneficios{
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .produtos li{
+        display: inline-table;
+        width: 90%;
+        margin: 10px 20px;
+    }
+
+    form{
+        margin: 20px 30px;
+    }
+
+    .input-padrao{
+        width: 250px;
+    }
+
+    fieldset{
+        margin: 10px;
+    }
+
+    select{
+        padding: 5px;
+    }
+
+    input.enviar{
+        width: 100%;
+    }
+
+    table{
+        margin: 20px 30px;
+        width: 35%;
+    }
+
 }
