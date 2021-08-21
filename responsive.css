@@ -279,6 +279,9 @@ footer{
 
 @media screen and (min-width:768px){
 
+/*-----------------------------------------------------------------*/
+/*Css da Index*/
+
 /*Cria a box centralizada, forçando o alinhamento do menu e logo da pag*/
 .caixa{
     position: relative;
@@ -286,16 +289,47 @@ footer{
     margin: 0 auto;
 }
 
-/*-----------------------------------------------------------------*/
-/*Css da Index*/
+h1{
+    text-align: justify;
+}
+
 .barbearia{
     width: 100%;
+    height: auto;
 }
+
+/*Move a lista de menu para escolha de posicionamento*/
+nav{
+    position: absolute;
+    top: 110px;
+    right: 200px;
+}
+
+/*Posiciona a lista de menu inline e da espaçamento entre cada opção*/
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+    border: none;
+}
+/*Letras em Maiúsculas, em negrito, tamanho de fonte, retira sublinhado padrão*/
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+/*Adiciona animação no menu de cabeçalho quando se tem o mouse sobre os link's*/
+nav a:hover{
+    color: #C78C19;
+    text-decoration: underline;
+}
+
 
 .principal{
     padding: 3em 0;
     background: #FEFEFE;
-    width: 940px;
+    width: 768px;
     margin: 0 auto;
 }
 .principal p{
@@ -332,7 +366,7 @@ footer{
 }
 
 .mapa-conteudo{
-    width: 940px;
+    width: 768px;
     margin: 0 auto;
 }
 
@@ -348,7 +382,7 @@ footer{
 }
 
 .conteudo-beneficios{
-    width: 640px;
+    width: 700px;
     margin: 0 auto;
 }
 
@@ -382,37 +416,13 @@ footer{
 }
 
 .video{
-    width: 560px;
+    width: 700px;
     margin: 2em auto;
 }
 
 
 /*-----------------------------------------------------------------*/
 /*Css dos produtos*/
-/*Move a lista de menu para escolha de posicionamento*/
-nav{
-    position: absolute;
-    top: 110px;
-    right: 0;
-}
-/*Posiciona a lista de menu inline e da espaçamento entre cada opção*/
-nav li{
-    display: inline;
-    margin: 0 0 0 15px;
-}
-/*Letras em Maiúsculas, em negrito, tamanho de fonte, retira sublinhado padrão*/
-nav a{
-    text-transform: uppercase;
-    color: #000000;
-    font-weight: bold;
-    font-size: 22px;
-    text-decoration: none;
-}
-/*Adiciona animação no menu de cabeçalho quando se tem o mouse sobre os link's*/
-nav a:hover{
-    color: #C78C19;
-    text-decoration: underline;
-}
 
 /*Cria a box centralizada, para seguir o padrão do cabeçalho*/
 .produtos{

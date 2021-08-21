@@ -4,6 +4,7 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+@media screen and (min-width: 1024px){
 /*-----------------------------------------------------------------*/
 /*Css da Index*/
 /*Cor e margin interna do cabeçalho*/
@@ -269,4 +270,4 @@ footer{
     font-size: 13px;
     margin-top: 20px;
 }
-
+}
