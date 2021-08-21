@@ -3,6 +3,9 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
+
+/*-----------------------------------------------------------------*/
+/*Css da Index*/
 /*Cor e margin interna do cabeçalho*/
 header{
     background-color: #BBBBBB;
@@ -15,8 +18,31 @@ header{
     margin: 0 auto;
 }
 
-/*-----------------------------------------------------------------*/
-/*Css da Index*/
+/*Move a lista de menu para escolha de posicionamento*/
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+/*Posiciona a lista de menu inline e da espaçamento entre cada opção*/
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+/*Letras em Maiúsculas, em negrito, tamanho de fonte, retira sublinhado padrão*/
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+/*Adiciona animação no menu de cabeçalho quando se tem o mouse sobre os link's*/
+nav a:hover{
+    color: #C78C19;
+    text-decoration: underline;
+}
+
 .barbearia{
     width: 100%;
 }
@@ -179,30 +205,6 @@ td, th{
 
 /*-----------------------------------------------------------------*/
 /*Css dos produtos*/
-/*Move a lista de menu para escolha de posicionamento*/
-nav{
-    position: absolute;
-    top: 110px;
-    right: 0;
-}
-/*Posiciona a lista de menu inline e da espaçamento entre cada opção*/
-nav li{
-    display: inline;
-    margin: 0 0 0 15px;
-}
-/*Letras em Maiúsculas, em negrito, tamanho de fonte, retira sublinhado padrão*/
-nav a{
-    text-transform: uppercase;
-    color: #000000;
-    font-weight: bold;
-    font-size: 22px;
-    text-decoration: none;
-}
-/*Adiciona animação no menu de cabeçalho quando se tem o mouse sobre os link's*/
-nav a:hover{
-    color: #C78C19;
-    text-decoration: underline;
-}
 
 /*Cria a box centralizada, para seguir o padrão do cabeçalho*/
 .produtos{
@@ -267,74 +269,4 @@ footer{
     font-size: 13px;
     margin-top: 20px;
 }
-/*Adaptação componentes para mobile*/
-@media screen and (max-width: 480px){
-    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .produtos, form, input.enviar{
-        width: auto;
-    }
 
-    h1{
-        text-align: center;
-    }
-
-    nav{
-        position: static;
-    }
-
-    nav li{
-        margin: 0 0 0 10px;
-    }
-
-    .principal{
-        line-height: 1.5;
-    }
-
-    .titulo-principal{
-        line-height: 1;
-    }
-    .utensilios{
-
-        margin: 0 10px 10px 0;
-    }
-
-    .produtos-imagem{
-        margin: auto;
-    }
-
-    .lista-beneficios, .imagem-beneficios{
-        width: 100%;
-        margin: 20px 0;
-    }
-
-    .produtos li{
-        display: inline-table;
-        width: 90%;
-        margin: 10px 20px;
-    }
-
-    form{
-        margin: 20px 30px;
-    }
-
-    .input-padrao{
-        width: 250px;
-    }
-
-    fieldset{
-        margin: 10px;
-    }
-
-    select{
-        padding: 5px;
-    }
-
-    input.enviar{
-        width: 100%;
-    }
-
-    table{
-        margin: 20px 30px;
-        width: 35%;
-    }
-
-}
