@@ -4,7 +4,7 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-@media screen and (min-width: 1024px){
+
 /*-----------------------------------------------------------------*/
 /*Css da Index*/
 /*Cor e margin interna do cabeçalho*/
@@ -143,6 +143,60 @@ nav a:hover{
 }
 
 /*-----------------------------------------------------------------*/
+/*Css dos produtos*/
+
+/*Cria a box centralizada, para seguir o padrão do cabeçalho*/
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+/*Posiciona a lista de produtos lado a lado; define o espaçamento interno dentro da resolução pré-definida*/
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+/*Altera a cor da box dos itens quando o mouse está por cima*/
+.produtos li:hover{
+    border-color: #C78C19;
+}
+/*Altera a cor da box dos itens quando o botão do mouse está pressionado*/
+.produtos li:active{
+    border-color: #088C19;
+}
+/*Altera o tamanho do titulo do item quando o mouse está por cima da box*/
+.produtos li:hover h2{
+    font-size: 35px;
+}
+
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao{
+    font-size: 18px;
+}
+
+.produto-preço{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.produtos-imagem{
+    height: 234px;
+}
+
+
+/*-----------------------------------------------------------------*/
 /*Css do Formulário*/
 form{
     width: 940px;
@@ -205,58 +259,6 @@ td, th{
 }
 
 /*-----------------------------------------------------------------*/
-/*Css dos produtos*/
-
-/*Cria a box centralizada, para seguir o padrão do cabeçalho*/
-.produtos{
-    width: 940px;
-    margin: 0 auto;
-    padding: 50px 0;
-}
-/*Posiciona a lista de produtos lado a lado; define o espaçamento interno dentro da resolução pré-definida*/
-.produtos li{
-    display: inline-block;
-    text-align: center;
-    width: 30%;
-    vertical-align: top;
-    margin: 0 1.5%;
-    padding: 30px 20px;
-    box-sizing: border-box;
-    border: 2px solid #000000;
-    border-radius: 10px;
-}
-/*Altera a cor da box dos itens quando o mouse está por cima*/
-.produtos li:hover{
-    border-color: #C78C19;
-}
-/*Altera a cor da box dos itens quando o botão do mouse está pressionado*/
-.produtos li:active{
-    border-color: #088C19;
-}
-/*Altera o tamanho do titulo do item quando o mouse está por cima da box*/
-.produtos li:hover h2{
-    font-size: 35px;
-}
-
-.produtos h2{
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.produto-descricao{
-    font-size: 18px;
-}
-
-.produto-preço{
-    font-size: 22px;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.produtos-imagem{
-    height: 234px;
-}
-/*-----------------------------------------------------------------*/
 /*Css do footer*/
 /*Background,alinhamento e espaçamento*/
 footer{
@@ -270,4 +272,4 @@ footer{
     font-size: 13px;
     margin-top: 20px;
 }
-}
+

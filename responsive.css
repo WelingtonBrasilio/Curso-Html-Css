@@ -1,12 +1,7 @@
-@media screen and (min-width: 0){
+@media screen and (max-width: 768px){
 
 /*Css da Index*/
 
-header{
-    background-color: #BBBBBB;
-    padding: 20px 0;
-}
-/*Cria a box centralizada, forçando o alinhamento do menu e logo da pag*/
 .caixa{
     width: auto;
 }
@@ -18,7 +13,7 @@ h1{
 nav{
     position: initial;
 }
-/*Posiciona a lista de menu abaixo da logo*/
+
 nav li{
     text-align: center;
     display: block;
@@ -26,84 +21,20 @@ nav li{
     padding: 10px;
     margin: 0;
 }
-/*Letras em Maiúsculas, em negrito, tamanho de fonte, retira sublinhado padrão*/
-nav a{
-    text-transform: uppercase;
-    color: #000000;
-    font-weight: bold;
-    font-size: 22px;
-    text-decoration: none;
-}
-/*Adiciona animação no menu de cabeçalho quando se tem o mouse sobre os link's*/
-nav a:hover{
-    color: #C78C19;
-    text-decoration: underline;
-}
-
-.barbearia{
-    width: 320px;
-    height: 150px;
-}
 
 .principal{
     padding: 2em 0;
-    background: #FEFEFE;
     width: auto;
-    margin: 0 auto;
     line-height: 1.5;
 }
-.principal p{
-    margin: 0 0 1em;
-}
 
-.principal strong{
-    font-weight: bold;
-}
-
-.principal em{
-    font-style: italic;
-}
-
-/*Características dos títulos da pagina, utilização do clear para criar uma "barreira" abaixo do float, não afetando o restante do conteúdo*/
-.titulo-principal{
-    text-align: center;
-    font-size: 2em;
-    margin: 0 0 1em;
-    clear: left;
-}
-
-/*Definição do Tamanho da img utensilios, utilizando float para efeito de texto "contornando"*/
-.utensilios{
-    width: 100px;
-    float: left;
-    margin: 0 20px 20px 0;
-}
-
-/*Formatação da seção mapa*/
-.mapa{
-    padding: 3em 0;
-    background: linear-gradient(#FEFEFE, #888888)
-}
 
 .mapa-conteudo{
     width: auto;
-    margin: 0 auto;
-}
-
-.mapa p{
-    margin: 0 0 2em;
-    text-align: center;
-}
-
-/*Formatação seção dos beneficios*/
-.beneficios{
-    padding: 2em 0;
-    background: #888888;
 }
 
 .conteudo-beneficios{
     width: auto;
-    margin: 0 auto;
 }
 
 .lista-beneficios, .imagem-beneficios{
@@ -113,444 +44,47 @@ nav a:hover{
     margin: 20px 0;
 }
 
-/*Espaçamento entre linhas*/
-.itens{
-    line-height: 1.5;
-}
 
-.itens::before{
-    content: "★";
-}
-/*Utiliza um pseudo-elemento para definir o 1 item em negrito. First,last,nth*/
-.itens:first-child{
-    font-weight: bold;
-}
 /*Sombramento e opacidade da imagem beneficios, com transição*/
 .imagem-beneficios{
     width: 100%;
-    opacity: 1;
-    transition: 400ms;
-    box-shadow: 10px 10px 30px 20px #000000;
 }
 
-.imagem-beneficios:hover{
-    opacity: 0.3;
-}
 
 .video{
     width: 100%;
-    margin: 2em auto;
 }
 
 
 /*-----------------------------------------------------------------*/
 /*Css dos produtos*/
-/*Move a lista de menu para escolha de posicionamento*/
-
-/*Cria a box centralizada, para seguir o padrão do cabeçalho*/
 .produtos{
-    width: 940px;
-    margin: 0 auto;
-    padding: 50px 0;
+    width: auto;
 }
-/*Posiciona a lista de produtos lado a lado; define o espaçamento interno dentro da resolução pré-definida*/
+
 .produtos li{
-    display: inline-block;
-    text-align: center;
-    width: 30%;
-    vertical-align: top;
-    margin: 0 1.5%;
-    padding: 30px 20px;
-    box-sizing: border-box;
-    border: 2px solid #000000;
-    border-radius: 10px;
+    display: block;
+    margin: 1.5%;
+    width: auto;
 }
-/*Altera a cor da box dos itens quando o mouse está por cima*/
-.produtos li:hover{
-    border-color: #C78C19;
-}
-/*Altera a cor da box dos itens quando o botão do mouse está pressionado*/
-.produtos li:active{
-    border-color: #088C19;
-}
-/*Altera o tamanho do titulo do item quando o mouse está por cima da box*/
-.produtos li:hover h2{
-    font-size: 35px;
-}
-
-.produtos h2{
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.produto-descricao{
-    font-size: 18px;
-}
-
-.produto-preço{
-    font-size: 22px;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.produtos-imagem{
-    height: 234px;
-}
-
 
 /*-----------------------------------------------------------------*/
 /*Css do Formulário*/
 form{
-    width: 940px;
-    margin: 40px auto;
-}
-/*Padroniza as labels e o paragrafo para uma melhor apresentação*/
-form label, form legend{
-    display: block;
-    font-size: 20px;
-    margin: 0 0 10px;
-}
-/*Cada item do formulário ocupa uma linha de espaço, tendo seu espaçamento e comprimento definidos*/
-.input-padrao{
-    display: block;
-    margin: 0 0 20px;
-    padding: 10px 25px;
-    width: 50%;
-}
-
-.checkbox{
-    margin: 20px 0;
-}
-/*Formatação do botão de envio, adicionando uma leve transição quando o cursor estiver sobre ele*/
-.enviar{
-    width: 40%;
-    padding: 15px 0;
-    background-color: #ffa500;
-    color: #FFFFFF;
-    font-weight: bold;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    transition: 1s all;
-    cursor: pointer;
-}
-
-.enviar:hover{
-    background-color: #ff8c00;
-    transform: scale(1.1);
-}
-
-/*Formatação da tabela e conteúdo*/
-.tabela{
-    width: 940px;
-    margin: 0 auto;
-}
-table{
-    margin: 20px 0 40px;
-}
-
-thead{
-    background-color: #555555;
-    color: #FFFFFF;
-    font-weight: bold;
-}
-
-td, th{
-    border: 1px solid #000000;
-    padding: 8px 15px;
-}
-
-
-/*-----------------------------------------------------------------*/
-/*Css do footer*/
-/*Background,alinhamento e espaçamento*/
-footer{
-    text-align: center;
-    padding: 40px;
-    background-image: url("/imagens/produtos/bg.jpg")
-}
-
-.copyright{
-    color: #FFFFFF;
-    font-size: 13px;
-    margin-top: 20px;
-}
-}
-
-@media screen and (min-width:768px){
-
-/*-----------------------------------------------------------------*/
-/*Css da Index*/
-
-/*Cria a box centralizada, forçando o alinhamento do menu e logo da pag*/
-.caixa{
-    position: relative;
-    width: 940px;
-    margin: 0 auto;
-}
-
-h1{
-    text-align: justify;
-}
-
-.barbearia{
     width: 100%;
-    height: auto;
 }
 
-/*Move a lista de menu para escolha de posicionamento*/
-nav{
-    position: absolute;
-    top: 110px;
-    right: 200px;
+.input-padrao{
+    width: 70%;
 }
 
-/*Posiciona a lista de menu inline e da espaçamento entre cada opção*/
-nav li{
-    display: inline;
-    margin: 0 0 0 15px;
-    border: none;
-}
-/*Letras em Maiúsculas, em negrito, tamanho de fonte, retira sublinhado padrão*/
-nav a{
-    text-transform: uppercase;
-    color: #000000;
-    font-weight: bold;
-    font-size: 22px;
-    text-decoration: none;
-}
-/*Adiciona animação no menu de cabeçalho quando se tem o mouse sobre os link's*/
-nav a:hover{
-    color: #C78C19;
-    text-decoration: underline;
-}
-
-
-.principal{
-    padding: 3em 0;
-    background: #FEFEFE;
-    width: 768px;
-    margin: 0 auto;
-}
-.principal p{
-    margin: 0 0 1em;
-}
-
-.principal strong{
-    font-weight: bold;
-}
-
-.principal em{
-    font-style: italic;
-}
-
-/*Características dos títulos da pagina, utilização do clear para criar uma "barreira" abaixo do float, não afetando o restante do conteúdo*/
-.titulo-principal{
-    text-align: center;
-    font-size: 2em;
-    margin: 0 0 1em;
-    clear: left;
-}
-
-/*Definição do Tamanho da img utensilios, utilizando float para efeito de texto "contornando"*/
-.utensilios{
-    width: 120px;
-    float: left;
-    margin: 0 20px 20px 0;
-}
-
-/*Formatação da seção mapa*/
-.mapa{
-    padding: 3em 0;
-    background: linear-gradient(#FEFEFE, #888888)
-}
-
-.mapa-conteudo{
-    width: 768px;
-    margin: 0 auto;
-}
-
-.mapa p{
-    margin: 0 0 2em;
-    text-align: center;
-}
-
-/*Formatação seção dos beneficios*/
-.beneficios{
-    padding: 3em 0;
-    background: #888888;
-}
-
-.conteudo-beneficios{
-    width: 700px;
-    margin: 0 auto;
-}
-
-.lista-beneficios{
-    width: 40%;
-    display: inline-block;
-    vertical-align: top;
-}
-/*Espaçamento entre linhas*/
-.itens{
-    line-height: 1.5;
-}
-
-.itens::before{
-    content: "★";
-}
-/*Utiliza um pseudo-elemento para definir o 1 item em negrito. First,last,nth*/
-.itens:first-child{
-    font-weight: bold;
-}
-/*Sombramento e opacidade da imagem beneficios, com transição*/
-.imagem-beneficios{
+.enviar{
     width: 60%;
-    opacity: 1;
-    transition: 400ms;
-    box-shadow: 10px 10px 30px 20px #000000;
 }
 
-.imagem-beneficios:hover{
-    opacity: 0.3;
-}
-
-.video{
-    width: 700px;
-    margin: 2em auto;
-}
-
-
-/*-----------------------------------------------------------------*/
-/*Css dos produtos*/
-
-/*Cria a box centralizada, para seguir o padrão do cabeçalho*/
-.produtos{
-    width: 940px;
-    margin: 0 auto;
-    padding: 50px 0;
-}
-/*Posiciona a lista de produtos lado a lado; define o espaçamento interno dentro da resolução pré-definida*/
-.produtos li{
-    display: inline-block;
-    text-align: center;
-    width: 30%;
-    vertical-align: top;
-    margin: 0 1.5%;
-    padding: 30px 20px;
-    box-sizing: border-box;
-    border: 2px solid #000000;
-    border-radius: 10px;
-}
-/*Altera a cor da box dos itens quando o mouse está por cima*/
-.produtos li:hover{
-    border-color: #C78C19;
-}
-/*Altera a cor da box dos itens quando o botão do mouse está pressionado*/
-.produtos li:active{
-    border-color: #088C19;
-}
-/*Altera o tamanho do titulo do item quando o mouse está por cima da box*/
-.produtos li:hover h2{
-    font-size: 35px;
-}
-
-.produtos h2{
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.produto-descricao{
-    font-size: 18px;
-}
-
-.produto-preço{
-    font-size: 22px;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.produtos-imagem{
-    height: 234px;
-}
-
-
-/*-----------------------------------------------------------------*/
-/*Css do Formulário*/
-form{
-    width: 940px;
-    margin: 40px auto;
-}
-/*Padroniza as labels e o paragrafo para uma melhor apresentação*/
-form label, form legend{
-    display: block;
-    font-size: 20px;
-    margin: 0 0 10px;
-}
-/*Cada item do formulário ocupa uma linha de espaço, tendo seu espaçamento e comprimento definidos*/
-.input-padrao{
-    display: block;
-    margin: 0 0 20px;
-    padding: 10px 25px;
-    width: 50%;
-}
-
-.checkbox{
-    margin: 20px 0;
-}
-/*Formatação do botão de envio, adicionando uma leve transição quando o cursor estiver sobre ele*/
-.enviar{
-    width: 40%;
-    padding: 15px 0;
-    background-color: #ffa500;
-    color: #FFFFFF;
-    font-weight: bold;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    transition: 1s all;
-    cursor: pointer;
-}
-
-.enviar:hover{
-    background-color: #ff8c00;
-    transform: scale(1.1);
-}
-
-/*Formatação da tabela e conteúdo*/
 .tabela{
-    width: 940px;
-    margin: 0 auto;
-}
-table{
-    margin: 20px 0 40px;
-}
-
-thead{
-    background-color: #555555;
-    color: #FFFFFF;
-    font-weight: bold;
-}
-
-td, th{
-    border: 1px solid #000000;
-    padding: 8px 15px;
+    width: 100%;
 }
 
 
-/*-----------------------------------------------------------------*/
-/*Css do footer*/
-/*Background,alinhamento e espaçamento*/
-footer{
-    text-align: center;
-    padding: 40px;
-    background-image: url("/imagens/produtos/bg.jpg")
-}
-
-.copyright{
-    color: #FFFFFF;
-    font-size: 13px;
-    margin-top: 20px;
-}
-}
 
